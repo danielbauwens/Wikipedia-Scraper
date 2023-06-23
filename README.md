@@ -10,9 +10,9 @@ This is my web scraping project, where the goal is to improve my skills with thi
 You can use this on Python 3.11, and use 'pip install -r requirements.txt' to get all necessary packages.
 
 ## Usage
-To run the code, simply open your command prompt(cmd), powershell or vscode terminal window and type "python leaders_scraper.py" or use the path to both the python.exe and the main.py file. That would look something like this:
+To run the code, simply open your command prompt(cmd), powershell or vscode terminal window and type "python main.py" or use the path to both the python.exe and the main.py file. That would look something like this:
 
-'c:/Users/Daniel/Documents/GitHub/Wikipedia-Scraper/.wikipedia_scraper_env/Scripts/python.exe c:/Users/Daniel/Documents/GitHub/Wikipedia-Scraper/leaders_scraper.py'
+'c:/Users/Daniel/Documents/GitHub/Wikipedia-Scraper/.wikipedia_scraper_env/Scripts/python.exe c:/Users/Daniel/Documents/GitHub/Wikipedia-Scraper/main.py'
 
 ## Timeline
 This project took 3 days to complete. I started on Wed(21/06/2023) and finished Fri(23/06/2023).
