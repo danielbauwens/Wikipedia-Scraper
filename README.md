@@ -20,9 +20,11 @@ This project took 3 days to complete. I started on Wed(21/06/2023) and finished 
 ## About me
 My name is Daniel Bauwens, I'm a 26 year old Junior Data Scientist. I am part of the ARAI 5 student group @ BeCode in Ghent, Belgium.
 
-My github: https://github.com/danielbauwens
-My linkedin: https://www.linkedin.com/in/daniel-bauwens-5515a8256/
+My github: https://github.com/danielbauwens    
+My linkedin: https://www.linkedin.com/in/daniel-bauwens-5515a8256/    
 
 
 ## Credits
 Special thanks to my fellow BeCoders without whom I wouldn't have been able to complete this in time.
+
+![myfellowbecoders](./assets/becodegroup.jpg)
