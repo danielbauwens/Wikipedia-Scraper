@@ -1,4 +1,4 @@
-# Imports all necessary libraries.
+# Imports all necessary packages.
 from bs4 import BeautifulSoup
 import requests
 import re
