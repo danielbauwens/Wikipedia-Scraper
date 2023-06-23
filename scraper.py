@@ -11,16 +11,16 @@ def get_first_paragraph(wikipedia_url):
     first_paragraph = ""
 
     # A for loop that checks the parent classes of "p"(paragraphs) that don't contain the first paragraph and skips those.
-    for p in soup.find_all("p"):
-        if p.find_parent(class_="bandeau-cell") or p.find_parent(class_="plainlist"):
+    for pwords in soup.find_all("p"):
+        if pwords.find_parent(class_="bandeau-cell") or pwords.find_parent(class_="plainlist"):
             continue   
 
-        # Removing html elements from the text.
-        p = p.text.strip()
+        # Removing whitespaces from the text.
+        pwords = pwords.text.strip()
 
         # Defining the first paragraph and cleaning up left over text so it's easy to read.
-        if p != "":
-            first_paragraph = p
+        if pwords != "":
+            first_paragraph = pwords
             first_paragraph = re.sub(r'\(\/.*?\;', '(', str(first_paragraph))
             first_paragraph = re.sub(r'\(.*?\;.*?\;', '(', str(first_paragraph))
             first_paragraph = re.sub(r'\(\s+', '(', str(first_paragraph))
