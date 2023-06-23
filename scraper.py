@@ -26,6 +26,9 @@ def get_first_paragraph(wikipedia_url):
             first_paragraph = re.sub(r'\(\s+', '(', str(first_paragraph))
             first_paragraph = re.sub(r'\[.*?\]', '', str(first_paragraph))
             first_paragraph = re.sub(r'\xa0', '', str(first_paragraph))
+            first_paragraph = re.sub(r'\(/.*?/\s+Écouter', '', str(first_paragraph))
+            first_paragraph = re.sub(r'\s+\)+\,', ',', str(first_paragraph))
+            first_paragraph = re.sub(r'Écouter', '', str(first_paragraph))
 
             # Breaking out of the loop checking for "p"(paragraphs). We only want the first one (relevant to us).
             break
@@ -64,4 +67,4 @@ def get_leaders():
             leaders_per_country[entry][i]['Summary']  = get_first_paragraph(leaders_per_country[entry][i]["wikipedia_url"])
 
             # For readability I only print the leaders first and last name and their first paragraph. 
-            print(leaders_per_country[entry][i]['first_name']+ " "+ leaders_per_country[entry][i]['last_name']+":\n"+ leaders_per_country[entry][i]['Summary'] + "\n")
+            print(leaders_per_country[entry][i]['first_name']+ " "+ leaders_per_country[entry][i]['last_name']+"("+entry+"):\n"+ leaders_per_country[entry][i]['Summary'] + "\n")
