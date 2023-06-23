@@ -23,6 +23,7 @@ def get_first_paragraph(wikipedia_url):
             first_paragraph = p
             first_paragraph = re.sub(r'\(\/.*?\;', '(', str(first_paragraph))
             first_paragraph = re.sub(r'\(.*?\;.*?\;', '(', str(first_paragraph))
+            first_paragraph = re.sub(r'\(\s+', '(', str(first_paragraph))
             first_paragraph = re.sub(r'\[.*?\]', '', str(first_paragraph))
             first_paragraph = re.sub(r'\xa0', '', str(first_paragraph))
 
