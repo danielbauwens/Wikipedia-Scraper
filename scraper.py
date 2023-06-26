@@ -72,5 +72,5 @@ def get_leaders():
     
     # Makes a seperate .json file with the leaders_per_country dictionary.
     json_filename = "./leaders.json"
-    with open(json_filename, "a") as file_content:
-        json.dump(leaders_per_country, file_content)
+    with open(json_filename, "a", encoding='utf8') as file_content:
+        json.dump(leaders_per_country, file_content, ensure_ascii=False)
