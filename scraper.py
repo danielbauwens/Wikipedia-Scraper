@@ -2,6 +2,7 @@
 from bs4 import BeautifulSoup
 import requests
 import re
+import json
 
 # Defines the function to retrieve the first paragraph from each individual wiki-Page
 def get_first_paragraph(wikipedia_url):
@@ -68,3 +69,8 @@ def get_leaders():
 
             # For readability I only print the leaders first and last name and their first paragraph. 
             print(leaders_per_country[entry][i]['first_name']+ " "+ leaders_per_country[entry][i]['last_name']+"("+entry+"):\n"+ leaders_per_country[entry][i]['Summary'] + "\n")
+    
+    # Makes a seperate .json file with the leaders_per_country dictionary.
+    json_filename = "./leaders.json"
+    with open(json_filename, "a") as file_content:
+        json.dump(leaders_per_country, file_content)
